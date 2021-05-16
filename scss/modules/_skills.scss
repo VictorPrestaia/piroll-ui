@@ -1,0 +1,101 @@
+.skills-wrap {
+    display: flex;
+}
+
+.prof-skills {
+    padding-top: 150px;
+    padding-left: 100px;
+    padding-right: 32px;
+    width: 50%;
+}
+.skills-line-wrap {
+    width: 80%;
+}
+.pf-skills-text {
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.skills-scale { 
+    font-size: 12px;
+    color: rgb(44, 44, 44);
+    font-weight: 700;
+}
+
+.skills-scale-line {
+    position: relative;
+    height: 3px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color:  rgb(190, 190, 190);
+}
+
+.line-design::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 75%;
+    background-color:  rgb(16, 201, 195);
+}
+.line-dev::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 90%;
+    background-color:  rgb(16, 201, 195);
+}
+
+.line-marketing::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 65%;
+    background-color:  rgb(16, 201, 195);
+}
+
+.skills-img {
+    height: 569px;
+    width: 50%;
+    background-image: url(../../images/prof-img.jpg);
+    background-size: cover;
+}
+
+@media (max-width: 768px) {
+
+    .prof-skills {
+        width: 100%;
+        padding: 0;
+        margin: 10px 15px; 
+    }
+
+    .pf-skills-text {
+        font-size: 20px;
+        margin-bottom: 20px;  
+        text-overflow: ellipsis; 
+        overflow: hidden;   
+    }
+
+    .skills-img {
+        display: none;
+    }
+
+    .skills-scale {
+        text-overflow: ellipsis; 
+        overflow: hidden;  
+    }
+}
+
+

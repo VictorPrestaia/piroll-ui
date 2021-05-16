@@ -1,0 +1,36 @@
+//переменная
+$fz:20px;
+//шаблон
+%btnstyle {
+    border-radius: 30px;
+    padding: $fz;
+    cursor: pointer;
+}
+// миксин
+@mixin text-style($f,$c) {
+    font-size: $f;
+    color: $c;
+}
+.wrap {
+    background-color: aqua;
+    padding: $fz;
+    .first-word {
+        font-weight: 600;
+        &:hover {
+            color: blue;
+    
+        }
+    }
+    
+    & p {
+        font-size: $fz;
+        text-transform: uppercase;
+    }
+    .bat {
+        @extend%btnstyle;
+    }
+    .second-text {
+        @include text-style(70px, steelblue)
+    }
+}
+

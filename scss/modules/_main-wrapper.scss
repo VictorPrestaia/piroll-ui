@@ -1,0 +1,70 @@
+.main-content {
+ padding: 100px 0;
+}
+.main-text-container {
+    width: 100%;
+    max-width: 400px;   
+}
+
+.banner-text-t {
+    font-size:34px;
+    font-weight: 700;
+}
+
+.banner-text-b {
+    font-size: 16px;
+    color: rgb(116, 116, 116);
+    padding: 20px 0;
+}
+
+.btn {
+    border: none;
+    background-color: rgb(16, 201, 195);
+    font-weight: 700;
+    color: white;
+    cursor: pointer;
+    padding: 20px 40px;
+    transition: all 0.1s ease-out;
+}
+
+.btn:hover {
+    background-color: rgb(41, 211, 205)
+}
+
+@media (max-width: 768px) {
+
+    .main-content {
+        padding: 20px 0;
+    }
+
+    .main-text-container {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .banner-text-t {
+        font-size: 20px;
+        text-overflow: ellipsis; 
+        overflow: hidden;  
+    }
+
+    .banner-text-b {
+        font-size: 14px;
+        text-overflow: ellipsis; 
+        overflow: hidden;  
+    }
+
+    .btn {
+        @include button;
+        padding: 10px 20px;  
+    }
+}
+
+@media (max-width: 120px) {
+    .btn {
+        @include button;
+        padding: 1px 1px;
+        max-width: 90%;
+    }
+}
+

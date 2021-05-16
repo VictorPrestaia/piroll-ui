@@ -1,0 +1,28 @@
+.contact-info-wrap {
+    background-color: rgb(245, 245, 245);
+    padding: 80px 80px;
+}
+
+
+.contact-info-heading {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.contact-form {
+    text-align: start;
+}
+
+.comments-font {
+    font-size: 14px;
+    font-family: sans-serif;
+}
+
+@media (max-width: 1000px) {
+    .contact-info-wrap {
+        padding: 20px 20px;
+    }
+    .contact-form {
+        text-align: center;
+    }
+   } 

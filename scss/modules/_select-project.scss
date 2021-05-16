@@ -1,0 +1,71 @@
+.select-project-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 42px;
+}
+
+.work-btn-img {
+    height: 16px;
+}
+
+.choose-project-btn {
+    background-color: white;
+    border: none;
+    height: 90px;
+    width: 200px;
+    cursor: pointer; 
+}
+
+.previous-btn-project {
+    text-align: start;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.previous-btn-project::before {
+    content: url(../../images/right-arrow.png);
+    padding-right: 14px;
+    vertical-align: middle;
+}
+
+.next-btn-project {
+    text-align: end;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;  
+}
+
+.next-btn-project::after {
+    content: url(../../images/left-arrow.png);
+    padding-left: 14px;
+    vertical-align: middle;
+}
+
+@media (max-width: 500px) {
+    .select-project-wrap {
+        justify-content: space-around;
+        padding: 0 5px;
+    }
+    .choose-project-btn {
+        width: 80px;
+        height: 50px;
+    }
+    .previous-btn-project {
+        text-align: center;
+        font-size: 10px;
+    }
+    .previous-btn-project::before {
+        display: none;
+    }
+    .next-btn-project {
+        text-align: center;
+        font-size: 10px;
+    }
+    .next-btn-project::after {
+        display: none;
+    }
+}
+

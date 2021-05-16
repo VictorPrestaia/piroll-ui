@@ -1,0 +1,60 @@
+.need-project-wrap {
+    background-color: rgb(245, 245, 245);
+    padding: 50px 5px;
+}
+
+.need-project-container {
+    max-width: 600px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.input {
+    padding: 7px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: none;
+}
+
+.input-name-email {
+   display: flex;
+   justify-content: space-between;
+}
+
+.input-name {
+    width: 49%;
+}
+
+.input-email {
+    width: 49%;
+}
+
+.input-title {
+    width: 100%;
+}
+
+.text-area-comment {
+    height: 200px;
+    width: 100%;
+    border: none;
+    resize: none;
+    padding: 10px;
+    margin: 15px 0;
+}
+
+@media (max-width: 768px) {
+    .need-project-wrap {
+     padding: 12px 5px;
+    }
+    
+    .input {
+        padding: 7px;
+        margin-top: 7px;
+        margin-bottom: 7px;
+    }
+    .text-area-comment {
+        padding: 10px;
+        margin-top: 7px;
+        margin-bottom: 7px;
+    }
+}

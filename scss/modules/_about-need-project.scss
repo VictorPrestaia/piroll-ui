@@ -1,0 +1,13 @@
+.about-need-project-wrap {
+    padding: 70px 5px;
+}
+
+.btn-about {
+    text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+    .about-need-project-wrap {
+        padding: 30px 5px;
+    }
+}

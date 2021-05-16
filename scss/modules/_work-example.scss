@@ -1,0 +1,50 @@
+.work-example-wrap {
+    background-color: rgb(246, 246, 246);
+}
+
+.work-example-text-content {
+  margin: 50px 50px;
+}
+
+.work-example-heading {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+.author-data {
+    color: black;
+    font-weight: 600;
+}
+
+.author-about {
+    color: rgb(97, 97, 97);
+}
+
+.paragraf-item {
+  margin-bottom: 5px;
+}
+
+.paragraf-item-top-bottom {
+  margin: 20px 0;
+}
+
+.work-example-img {
+    height: 570px;
+    width: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .work-example-text-content {
+        margin: 15px 10px;
+    }
+    .work-example-heading {
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
+    .paragraf-item-top-bottom {
+        margin: 10px 0;
+    }  
+}

@@ -1,0 +1,56 @@
+.company-employees-banner-wrap {
+    min-height: 300px;
+    padding: 5px;
+    position: relative;
+    background-color: black;
+}
+
+.company-employees-banner-wrap::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url(../../images/company-employer-img.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8;
+    transition: opacity 0.3s ease-in;
+}
+
+.company-employees-banner-wrap:hover {
+    background-image: url(../../images/company-employer-img.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: 1;
+}
+
+.comp-emp-banner-link {
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+.comp-emp-banner-heading {
+    font-size: 28px;
+    font-weight: 600;
+    margin: 80px 0 20px 0;
+}
+
+.comp-emp-banner-text {
+    display: block;
+    margin: 0 auto;
+    font-size: 16px;
+    max-width: 400px;  
+}
+
+@media (max-width: 768px) {
+      .comp-emp-banner-text {
+        display: -webkit-box;
+        -webkit-line-clamp: 8;
+        -webkit-box-orient: vertical;
+        overflow: hidden;   
+    }
+}

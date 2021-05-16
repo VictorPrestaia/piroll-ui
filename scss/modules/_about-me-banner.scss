@@ -1,0 +1,33 @@
+.about-me-banner-wrap {
+    background-color: rgb(245, 245, 245);
+}
+
+.about-me-banner-content {
+ padding: 10px;
+ margin: 70px;
+}
+
+.about-me-banner-img {
+    height: 569px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.about-me-banner-text-content {
+    color: rgb(97, 97, 97);
+    margin: 0 0 10px 0;
+}
+
+@media (max-width: 991px) {
+    .about-me-banner-content {
+        text-align: center;
+        margin: 0;
+    }
+    .about-me-banner-text-content {
+        display: -webkit-box;
+        -webkit-line-clamp: 50;
+        -webkit-box-orient: vertical;
+        overflow: hidden; 
+    }
+}
+
